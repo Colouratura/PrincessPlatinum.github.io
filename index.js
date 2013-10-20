@@ -30,6 +30,7 @@ window.onload = function () {
 (function ($) {
     if (typeof (Storage) !== "undefined") {
         function save() {
+            alert('');
             var text = $('textarea')[0].val();
             localStorage.termtype = text;
             alert('Text saved!');
