@@ -9,7 +9,7 @@
     <body>
         <h1 id="main-text">Terminal Typer</h1>
         <br />
-        <div id="terminal" onclick="$('setter').focus();">
+        <div id="terminal" onclick="typer('setter').focus();">
             <textarea id="setter" onkeydown="writeit(this, event);moveIt(this.value.length, event)" onkeypress="writeit(this, event);" onkeyup="writeit(this, event)" WRAP=SOFT>
 </textarea>
             <div id="getter">
