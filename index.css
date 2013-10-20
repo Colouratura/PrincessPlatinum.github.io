@@ -78,3 +78,7 @@ a.button {
     font-size: 12pt;
     text-decoration: none;
 }
+
+#button-wrapper {
+    text-align: center;
+}
