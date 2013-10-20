@@ -28,3 +28,16 @@
         cursor.style.left = "0px";
     };
 });
+
+if(typeof(Storage)!=="undefined") {
+    $('#save').click(function() {
+        var text = document.getElementById('setter').value;
+        localStorage.termtype = text;
+        alert('Text saved!');
+    });
+    $('#load').click(function() {
+        document.getElementById('setter').value = localStorage.termtype;
+    });
+} else {
+  alert('We are sorry!\nYour web browser currently doesn\'t support localStorage!\nPlease come back with a modern browser!');
+}
