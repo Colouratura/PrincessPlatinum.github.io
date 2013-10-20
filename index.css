@@ -76,4 +76,5 @@ a.button {
     margin: 4px;
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 12pt;
+    text-decoration: none;
 }
