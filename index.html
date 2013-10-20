@@ -17,7 +17,7 @@
             </div>
         </div>
         <div id="button-wrapper">
-            <a class="button" onclick="function(){var text = $('#writer').text();localStorage.termtype = text;alert('Text saved!');}" href="javascript:void(0)">Save</a>&nbsp;&nbsp;<a class="button" onclick="function load() {$('#writer').text(localStorage.termtype);}" href="javascript:void(0)">Load</a>
+            <a class="button" onclick="function(){var text = $('#writer').html();localStorage.termtype = text;alert('Text saved!');}" href="javascript:void(0)">Save</a>&nbsp;&nbsp;<a class="button" onclick="function load() {$('#writer').html(localStorage.termtype);}" href="javascript:void(0)">Load</a>
         </div>
         <br />
     </body>
