@@ -29,7 +29,7 @@ textarea#setter {
 }
 
 #writer {
-    font-family: cursor, courier;
+    font-family: monospace;
     font-weight: 700;
     color: green;
     background: #000;
@@ -54,4 +54,10 @@ textarea#setter {
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
     -webkit-animation-duration: 1s;
+}
+
+#main-text {
+    color: green;
+    font: monospace;
+    text-align: center;
 }
