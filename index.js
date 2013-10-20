@@ -27,18 +27,17 @@ window.onload = function () {
     cursor.style.left = "0px";
 };
 
-(function ($) {
-    if (typeof (Storage) !== "undefined") {
-        function save() {
-            alert('');
-            var text = $('textarea')[0].val();
-            localStorage.termtype = text;
-            alert('Text saved!');
-        }
-        function load() {
-            $('textarea')[0].val(localStorage.termtype);
-        }
-    } else {
-        alert('We are sorry!\nYour web browser currently doesn\'t support localStorage!\nPlease come back with a modern browser!');
+if (typeof (Storage) !== "undefined") {
+    function save() {
+        alert('');
+        var text = $('textarea')[0].val();
+        localStorage.termtype = text;
+        alert('Text saved!');
     }
-}(jQuery));
+
+    function load() {
+        $('textarea')[0].val(localStorage.termtype);
+    }
+} else {
+    alert('We are sorry!\nYour web browser currently doesn\'t support localStorage!\nPlease come back with a modern browser!');
+}
