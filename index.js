@@ -1,6 +1,6 @@
-(function ($) {
+(function () {
     var cursor,
-        $ = function (id) {
+        typer = function (id) {
             return document.getElementById(id);
         },
         nl2br = function (txt) {
@@ -8,7 +8,7 @@
         },
         writeit = function (from, e) {
             e = e || window.event;
-            var w = $("writer");
+            var w = typer("writer");
             var tw = from.value;
             w.innerHTML = nl2br(tw);
         },
@@ -24,20 +24,22 @@
         };
 
     window.onload = function () {
-        cursor = $("cursor");
+        cursor = typer("cursor");
         cursor.style.left = "0px";
     };
 });
 
-if(typeof(Storage)!=="undefined") {
-    $('#save').click(function() {
-        var text = document.getElementById('setter').value;
-        localStorage.termtype = text;
-        alert('Text saved!');
-    });
-    $('#load').click(function() {
-        document.getElementById('setter').value = localStorage.termtype;
-    });
-} else {
-  alert('We are sorry!\nYour web browser currently doesn\'t support localStorage!\nPlease come back with a modern browser!');
-}
+(function ($) {
+    if (typeof (Storage) !== "undefined") {
+        $('#save').click(function () {
+            var text = document.getElementById('setter').value;
+            localStorage.termtype = text;
+            alert('Text saved!');
+        });
+        $('#load').click(function () {
+            document.getElementById('setter').value = localStorage.termtype;
+        });
+    } else {
+        alert('We are sorry!\nYour web browser currently doesn\'t support localStorage!\nPlease come back with a modern browser!');
+    }
+}(jQuery));
