@@ -34,7 +34,6 @@ textarea#setter {
     font-weight: 700;
     color: green;
     background: #000;
-    text-wrap: normal;
 }
 
 #getter {
