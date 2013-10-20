@@ -29,14 +29,14 @@ window.onload = function () {
 
 (function ($) {
     if (typeof (Storage) !== "undefined") {
-        $('#save').click(function () {
+        function save() {
             var text = $('textarea').val();
             localStorage.termtype = text;
             alert('Text saved!');
-        });
-        $('#load').click(function () {
+        }
+        function load() {
             $('textarea').val(localStorage.termtype);
-        });
+        }
     } else {
         alert('We are sorry!\nYour web browser currently doesn\'t support localStorage!\nPlease come back with a modern browser!');
     }
