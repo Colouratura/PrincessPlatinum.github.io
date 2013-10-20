@@ -1,44 +1,57 @@
 body {
-	background: #AAA;
-					}
-.header { 
-	background-image: linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
-	background-image: -o-linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
-	background-image: -moz-linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
-	background-image: -webkit-linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
-	background-image: -ms-linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
-
-	background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0, #CFCFCF),
-	color-stop(1, #FFFFFF)
-	);
-	color: #333;
-	width: 70%;
-	margin: auto;
-	border: 1px solid #CCC;
-	font-family: Segoe UI, arial, sans-serif;
-	padding: 4px 4px 4px 4px;
-	display: block;
-	border-radius: 20px;
-	padding: 2em;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	box-shadow: 0 0 12px #555;
+    margin: 0;
+    padding: 0;
+    height: 99%;
+    background: #000;
 }
 
-a {
-	color: #0065ff;
-	text-decoration: none;
+textarea#setter {
+    left: -1000px;
+    position: absolute;
+    background: #000;
+    color: green;
 }
 
-a:hover {
-	color: #5196ff;
-	text-decoration: underline;
+.cursor {
+    font-size: 12px;
+    background-color: green;
+    color: green;
+    position: relative;
 }
 
-.customization {
-	margin-left: 5%;
+#terminal {
+    margin: 8px;
+    cursor: text;
+    height: 500px;
+    overflow: auto;
+    background: #000;
+    border: 3px solid green;
+}
+
+#writer {
+    font-family: cursor, courier;
+    font-weight: 700;
+    color: green;
+    background: #000;
+}
+
+#getter {
+    margin: 5px;
+}
+
+@-webkit-keyframes blinker {
+    fromopacity: 1.0;
+}
+
+to {
+    opacity: 0.0;
+}    
+
+}
+
+.blink {
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-duration: 1s;
 }
