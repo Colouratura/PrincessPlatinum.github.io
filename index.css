@@ -29,7 +29,7 @@ textarea#setter {
 }
 
 #writer {
-    font-family: monospace;
+    font-family: Lucidiatypewriter, monospace;
     font-weight: 700;
     color: green;
     background: #000;
@@ -58,6 +58,6 @@ textarea#setter {
 
 #main-text {
     color: green;
-    font: monospace;
+    font: Lucidiatypewriter, monospace;
     text-align: center;
 }
