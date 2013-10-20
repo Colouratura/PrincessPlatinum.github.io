@@ -1,4 +1,4 @@
-(function () {
+(function ($) {
     var cursor,
         $ = function (id) {
             return document.getElementById(id);
