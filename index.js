@@ -30,12 +30,12 @@ window.onload = function () {
 (function ($) {
     if (typeof (Storage) !== "undefined") {
         function save() {
-            var text = $('textarea').val();
+            var text = $('textarea')[0].val();
             localStorage.termtype = text;
             alert('Text saved!');
         }
         function load() {
-            $('textarea').val(localStorage.termtype);
+            $('textarea')[0].val(localStorage.termtype);
         }
     } else {
         alert('We are sorry!\nYour web browser currently doesn\'t support localStorage!\nPlease come back with a modern browser!');
