@@ -40,13 +40,13 @@ textarea#setter {
 }
 
 @-webkit-keyframes blinker {
-    fromopacity: 1.0;
-}
+    from {
+        opacity: 1.0;
+    }
 
-to {
-    opacity: 0.0;
-}    
-
+    to {
+        opacity: 0.0;
+    }    
 }
 
 .blink {
