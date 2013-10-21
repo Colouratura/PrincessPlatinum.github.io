@@ -2,7 +2,7 @@
 
 body {
         background: #AAA;
-                                        }
+}
 .header { 
         background-image: linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
         background-image: -o-linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
