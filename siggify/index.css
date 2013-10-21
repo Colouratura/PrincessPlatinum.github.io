@@ -1,0 +1,44 @@
+body {
+        background: #AAA;
+                                        }
+.header { 
+        background-image: linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
+        background-image: -o-linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
+        background-image: -moz-linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
+        background-image: -webkit-linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
+        background-image: -ms-linear-gradient(bottom, #CFCFCF 0%, #FFFFFF 100%);
+
+        background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #CFCFCF),
+        color-stop(1, #FFFFFF)
+        );
+        color: #333;
+        width: 70%;
+        margin: auto;
+        border: 1px solid #CCC;
+        font-family: Segoe UI, arial, sans-serif;
+        padding: 4px 4px 4px 4px;
+        display: block;
+        border-radius: 20px;
+        padding: 2em;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        box-shadow: 0 0 12px #555;
+}
+
+a {
+        color: #0065ff;
+        text-decoration: none;
+}
+
+a:hover {
+        color: #5196ff;
+        text-decoration: underline;
+}
+
+.customization {
+        margin-left: 5%;
+}
