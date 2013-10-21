@@ -55,3 +55,9 @@ textarea#setter {
     -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
     -webkit-animation-duration: 1s;
 }
+
+#main-text {
+    color: green;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+}
