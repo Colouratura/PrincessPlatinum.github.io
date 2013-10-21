@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="index.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="apple-touch-icon" href="http://www.dvc.me.uk/wordpress/wp-content/uploads/2013/05/TerminalApp-Icon-300x267.png" />
+        <title>Terminal Typer</title>
+    </head>
+    <body>
+        <h1 id="main-text">Terminal Typer</h1>
+        <br />
+        <div id="terminal" onclick="typer('setter').focus();">
+            <textarea id="setter" onkeydown="writeit(this, event);moveIt(this.value.length, event)" onkeypress="writeit(this, event);" onkeyup="writeit(this, event)" WRAP=SOFT>
+</textarea>
+            <div id="getter">
+                <span id="writer"></span><b class="cursor blink" id="cursor">B</b>
+            </div>
+        </div>
+    </body>
+</html>
