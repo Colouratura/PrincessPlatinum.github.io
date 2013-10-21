@@ -1,0 +1,13 @@
+/* Styling for pre tags*/
+pre {
+    padding: 0.1em 0.5em 0.3em 0.7em;
+    border-left: 11px solid #ccc;
+    border-right: 5px solid #ccc;
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+    margin: 1.7em 0 1.7em 0.3em;
+    overflow: auto;
+    width: 500px;
+    font-family: Consolas, "Lucida Console", Monaco, monospace;
+}
+
