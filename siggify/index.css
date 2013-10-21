@@ -1,3 +1,5 @@
+@import url('https://raw.github.com/PrincessPlatinum/PrincessPlatinum.github.io/master/resources/main.css');
+
 body {
         background: #AAA;
                                         }
@@ -41,11 +43,4 @@ a:hover {
 
 .customization {
         margin-left: 5%;
-}
-
-pre {
-        color: white;
-        background: black;
-        padding: 2px 2px 2px 2px;
-        border: 1px solid gray;
 }
