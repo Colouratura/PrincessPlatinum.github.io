@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 99%;
+    background: #000;
+}
+
+textarea#setter {
+    left: -1000px;
+    position: absolute;
+    background: #000;
+    color: green;
+}
+
+.cursor {
+    font-size: 12px;
+    background-color: green;
+    color: green;
+    position: relative;
+}
+
+#terminal {
+    margin: 8px;
+    cursor: text;
+    height: 500px;
+    overflow: auto;
+    background: #000;
+    border: 3px solid green;
+}
+
+#writer {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 12pt;
+    font-weight: 700;
+    color: green;
+    background: #000;
+}
+
+#getter {
+    margin: 5px;
+}
+
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+    to {
+       opacity: 0.0;
+    }    
+}
+
+.blink {
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-duration: 1s;
+}
