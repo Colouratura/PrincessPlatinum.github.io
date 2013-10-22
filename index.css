@@ -2,6 +2,13 @@ body {
     background: #a64da6;
 }
 
+#body {
+    background: purple;
+    height: auto;
+    width: auto;
+    padding-top: 16px;
+}
+
 #header {
     background: purple;
     height: 125px;
